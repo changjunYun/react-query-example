@@ -2609,6 +2609,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.56.1":
+  version: 5.56.1
+  resolution: "@tanstack/query-core@npm:5.56.1"
+  checksum: 7c9b952854995416d3562eafbfc1af719e79ae90ea1aaf398c9a81c17576b887ff722f95d80594bf9ebdbbb38185ea848093455a7f741a6c5331977663cf1ce5
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.56.1":
+  version: 5.56.1
+  resolution: "@tanstack/react-query@npm:5.56.1"
+  dependencies:
+    "@tanstack/query-core": "npm:5.56.1"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: c54570ed0666be0abc0fd2ad14da642e74fff0cead4982e41c50b2363d7b702d392ed96d3aaac58f927b37a83dc0e54243f5e41ff69232a427491d21ea83af0e
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^8.5.0":
   version: 8.20.1
   resolution: "@testing-library/dom@npm:8.20.1"
@@ -11048,9 +11066,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-query@workspace:."
   dependencies:
+    "@tanstack/react-query": "npm:^5.56.1"
     "@testing-library/jest-dom": "npm:^5.14.1"
     "@testing-library/react": "npm:^13.0.0"
     "@testing-library/user-event": "npm:^13.2.1"
+    eslint-config-react-app: "npm:^7.0.1"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     react-scripts: "npm:5.0.1"
